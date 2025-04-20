@@ -1,4 +1,4 @@
-class CourseModule < ApplicationRecord
+  class CourseModule < ApplicationRecord
   belongs_to :course
-  has_many :contents, -> { order(:position) }, dependent: :destroy
+  has_many :contents, dependent: :destroy
 end

@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   namespace :api do
-    get "courses/index"
-    get "courses/show"
+    resources :courses, only: [:index, :show]
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
