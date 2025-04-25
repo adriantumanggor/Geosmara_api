@@ -26,7 +26,10 @@ end
 seed_course("Ketika Manusia Mulai Merekam Ruang", "/ketika.png", [
   {
     title: "Navigasi Alamiah",
-    image_urls: ["/ketika.png"],
+    image_urls: [
+      "/navlam.jpg",
+      "/navlam2.jpg"
+    ],
     contents: [
       "Manusia prasejarah mengandalkan lingkungan mereka untuk bertahan hidup. Tanpa sistem navigasi modern, mereka harus memahami cara membaca tanda-tanda alamiah seperti arah matahari, posisi bintang, serta bentuk medan sekitar. Pengembaraan dan migrasi awal manusia didasarkan pada pemahaman intuitif terhadap ruang yang diwariskan secara turun-temurun melalui tradisi lisan.",
       "Selain navigasi alamiah, manusia prasejarah juga menggunakan goa sebagai tempat perlindungan dan komunikasi. Dinding gua menjadi medium pertama untuk merekam ruang dan pengalaman mereka. Lukisan-lukisan yang ditemukan di berbagai gua di dunia, seperti di Lascaux, Prancis, menunjukkan bahwa manusia telah berusaha mengabadikan ruang dalam bentuk visual sejak ribuan tahun yang lalu.",
@@ -35,7 +38,10 @@ seed_course("Ketika Manusia Mulai Merekam Ruang", "/ketika.png", [
   },
   {
     title: "Kartografi Prasejarah",
-    image_urls: ["/ketika.png"],
+    image_urls: [
+      "/karto.jpg",
+      "/karto2.jpeg"
+    ],
     contents: [
       "Sebelum manusia mengenal kertas atau papirus, mereka sudah berusaha merekam dan memahami lingkungan sekitar dengan cara menggambar di dinding gua, mengukir batu, atau membuat simbol pada tanah liat. Ini merupakan bentuk paling awal dari kartografi, yang tidak hanya berfungsi sebagai alat navigasi, tetapi juga sebagai ekspresi budaya, ritual, dan pemahaman manusia terhadap dunia.",
       "Salah satu contoh paling terkenal dari peta prasejarah adalah lukisan di Gua Lascaux, Prancis (sekitar 17.000 tahun yang lalu). Lukisan ini menggambarkan wilayah berburu dan jalur migrasi hewan, yang kemungkinan besar digunakan oleh manusia purba untuk merencanakan perburuan. Beberapa teori juga menyebutkan bahwa peta ini tidak hanya bersifat praktis, tetapi memiliki nilai spiritual, seperti bagian dari ritual keberuntungan sebelum berburu.",
