@@ -2,23 +2,19 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  host: <%= ENV.fetch("DATABASE_HOST", nil) %>  # Kosongkan untuk production (gunakan socket)
   username: <%= ENV.fetch("POSTGRES_USER", "postgres") %>
   password: <%= ENV.fetch("POSTGRES_PASSWORD", "password") %>
 
 development:
   <<: *default
   database: geosmara_development
-  host: db  # Sesuai service name di docker-compose.yml
 
 test:
   <<: *default
   database: geosmara_test
-  host: db  # Sesuai service name di docker-compose.yml
 
 production:
   <<: *default
   database: geosmara_production
   # Hapus host dan gunakan socket
-  host: # Kosongkan
   socket: "/cloudsql/western-cascade-457906-m2:asia-southeast2:rails-db-instance/.s.PGSQL.5432"
