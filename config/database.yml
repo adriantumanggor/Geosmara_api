@@ -16,4 +16,3 @@ production:
   database: <%= ENV["PRODUCTION_DB_NAME"] %>
   username: <%= ENV["PRODUCTION_DB_USERNAME"] %>
   password: <%= Rails.application.credentials.gcp[:db_password] %>
-  socket: <%= ENV.fetch('PRODUCTION_DB_SOCKET') %>
