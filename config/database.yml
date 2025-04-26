@@ -19,4 +19,6 @@ test:
 production:
   <<: *default
   database: geosmara_production
+  # Hapus host dan gunakan socket
+  host: # Kosongkan
   socket: "/cloudsql/western-cascade-457906-m2:asia-southeast2:rails-db-instance/.s.PGSQL.5432"
