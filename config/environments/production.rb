@@ -99,5 +99,5 @@ Rails.application.configure do
   # ]
   # Skip DNS rebinding protection for the default health check endpoint.
   # config.host_authorization = { exclude: ->(request) { request.path == "/up" } }
-  config.hosts << "geosmara-api-xnty7uadjq-uc.a.run.app"
+  config.hosts << "geosmara-api-63358076691.us-central1.run.app"
 end
