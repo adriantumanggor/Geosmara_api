@@ -2,8 +2,6 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: <%= ENV.fetch("POSTGRES_USER", "postgres") %>
-  password: <%= ENV.fetch("POSTGRES_PASSWORD", "password") %>
 
 development:
   <<: *default
@@ -15,6 +13,7 @@ test:
 
 production:
   <<: *default
-  database: geosmara_production
-  # Hapus host dan gunakan socket
-  socket: "/cloudsql/western-cascade-457906-m2:asia-southeast2:rails-db-instance/.s.PGSQL.5432"
+  database: <%= ENV["PRODUCTION_DB_NAME"] %>
+  username: <%= ENV["PRODUCTION_DB_USERNAME"] %>
+  password: <%= ENV["PRODUCTION_DB_PASSWORD"] %>
+  host: <%= ENV.fetch('PRODUCTION_DB_HOST') %>
