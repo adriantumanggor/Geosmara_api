@@ -287,4 +287,4 @@ seed_course("Merekam Dunia yang Terus Berubah", "/merekamduniamasadepan.png", [
 ])
 
 
-puts "✅ Seed data 3 course berhasil dibuat!"
+puts "✅ Seed data courses berhasil dibuat!"
