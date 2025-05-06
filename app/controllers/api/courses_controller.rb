@@ -82,7 +82,7 @@ module Api
       return nil if path.blank?
     
       # Ganti 'localhost' dengan '10.0.2.2' pada base_url
-      modified_base_url = request.base_url.sub('localhost', '192.168.187.83')
+      modified_base_url = request.base_url.sub('localhost', 'localhost')
     
       # Pastikan tidak ada garis miring ganda pada path
       relative_path = "/#{path.sub(/^\//, '')}"

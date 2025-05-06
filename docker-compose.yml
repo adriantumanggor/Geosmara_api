@@ -35,6 +35,18 @@ services:
     environment:
       DATABASE_URL: postgres://postgres:password@db:5432/geosmara_development
 
+  solana:
+    build:
+      context: .
+      dockerfile: Dockerfile.solana
+    ports:
+      - "4567:4567"
+    volumes:
+      - ~/geocoins:/solana-token:Z
+      - ~/geocoins/solana-data:/root/.config/solana:Z
+    tty: true
+    stdin_open: true
+    
 volumes:
   postgres_data:
   bundle_cache:
