@@ -42,8 +42,8 @@ services:
     ports:
       - "4567:4567"
     volumes:
-      - ~/geocoins:/solana-token:Z
-      - ~/geocoins/solana-data:/root/.config/solana:Z
+      - ./geocoins:/solana-token:Z
+      - ./geocoins/solana-data:/root/.config/solana:Z
     tty: true
     stdin_open: true
     
