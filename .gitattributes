@@ -7,3 +7,34 @@ db/schema.rb linguist-generated
 vendor/* linguist-vendored
 config/credentials/*.yml.enc diff=rails_credentials
 config/credentials.yml.enc diff=rails_credentials
+
+# Default to LF for all text files
+* text=auto eol=lf
+
+# Ensure Unix-style line endings for common config and code files
+*.rb     text eol=lf
+*.rake   text eol=lf
+*.yml    text eol=lf
+*.yaml   text eol=lf
+*.json   text eol=lf
+*.sh     text eol=lf
+Dockerfile* text eol=lf
+docker-compose* text eol=lf
+*.md     text eol=lf
+*.erb    text eol=lf
+*.html   text eol=lf
+*.js     text eol=lf
+*.ts     text eol=lf
+*.css    text eol=lf
+*.scss   text eol=lf
+
+# Ignore binaries
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.pdf    binary
+*.woff   binary
+*.woff2  binary
+*.ttf    binary
+*.eot    binary
